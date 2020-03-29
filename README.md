@@ -302,3 +302,6 @@ Those background processing services could be easily distributed out to separate
 `In Node,` **blocking operations are the root of all evil—99% of Node misuses come as a direct consequence.**
 
 `Remember:` **Node.js was never created to solve the compute scaling problem. It was created to solve the I/O scaling problem, which it does really well.**
+
+
+`Source` -- https://www.toptal.com/nodejs/why-the-hell-would-i-use-node-js
