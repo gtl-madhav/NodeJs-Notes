@@ -303,5 +303,13 @@ Those background processing services could be easily distributed out to separate
 
 `Remember:` **Node.js was never created to solve the compute scaling problem. It was created to solve the I/O scaling problem, which it does really well.**
 
+### Other Use Cases 
+![Chat Example](https://github.com/gtl-madhav/NodeJs-Notes/blob/master/Node.js-use-case-Infographic.png)
 
+### Source
 `Source` -- https://www.toptal.com/nodejs/why-the-hell-would-i-use-node-js
+
+### Some of Best Tools.
+`Tools`
+https://medium.mybridge.co/45-amazing-node-js-open-source-for-the-past-year-v-2019-c774d750e925
+
