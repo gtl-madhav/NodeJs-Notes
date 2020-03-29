@@ -313,3 +313,7 @@ Those background processing services could be easily distributed out to separate
 `Tools`
 https://medium.mybridge.co/45-amazing-node-js-open-source-for-the-past-year-v-2019-c774d750e925
 
+### What is ?
+
+`MEAN` - MongoDB, Express js, Angular, Node 
+`MERN` - MongoDB, Express Js, React, Node
