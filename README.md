@@ -82,6 +82,8 @@ using it for heavy computation will annul nearly all of its advantages. Where No
 
 `NEW WAY ::` Node.js operates on a **single-thread**, using **non-blocking I/O calls**, `allowing` it to support **tens of thousands of concurrent connections held in the event loop**.
 
+![Chat Example](https://github.com/gtl-madhav/NodeJs-Notes/blob/master/REQUEST.png)
+
 ## What we need to take care .. 
 
 `There is`, of course, the question of **sharing a single thread between all clients requests**, and it is a potential pitfall of writing Node.js applications. Firstly, **heavy computation could choke up Node’s single thread and cause problems for all clients (more on this later) as incoming requests would be blocked until said computation was completed**. 
@@ -153,6 +155,8 @@ When one of the clients posts a message, here’s what happens:
 * All clients receive the new message as a push message via a websockets client-side component running within the web page. 
 * They then pick up the message content and update the web page in-place by appending the new message to the board.
 
+![Chat Example](https://github.com/gtl-madhav/NodeJs-Notes/blob/master/BROADCAST%20OVER.png)
+
 `you might use a simple cache based on the Redis store. Or in an even more advanced solution, a message queue to handle the routing of messages to clients and a more robust delivery mechanism which may cover for temporary connection losses or storing messages for registered clients while they’re offline. But regardless of the improvements that you make, Node.js will still be operating under the same basic principles: reacting to events, handling many concurrent connections, and maintaining fluidity in the user experience.`
 
 ### CASE - 2 —> API ON TOP OF AN OBJECT DB 
@@ -190,6 +194,8 @@ as well as operations that don’t need to be reflected instantly (like updating
 Solution 
 
 **Data gets queued through some kind of caching** or **message queuing infrastructure—like RabbitMQ or ZeroMQ—and digested by a separate database batch-write process**, or computation intensive processing backend services, written in a better performing platform for such tasks. Similar behavior can be implemented with other languages/frameworks, but not on the same hardware, with the same high, maintained throughput.
+
+![Chat Example](https://github.com/gtl-madhav/NodeJs-Notes/blob/master/BROWSER.png)
 
 In short: with Node, you can push the database writes off to the side and deal with them later, proceeding as if they succeeded.
 
