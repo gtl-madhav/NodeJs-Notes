@@ -40,6 +40,7 @@ Node.js, being **single-threaded**, may be a **bad choice for** web servers doub
 
 Node.js is primarily used for **non-blocking, event-driven servers, due to its single-threaded nature**. It's used for **traditional web sites** and **back-end API services**, but was `Designed` with **real-time, push-based architectures in mind**.
 
+ * **Sorting, search, graph traversal, matrix multiply**
 `If your use case does not contain` **CPU intensive operations nor access any blocking resources**, you can exploit the benefits of Node.js and enjoy fast and scalable network applications. Welcome to the real-time web.
 
 the creator of Node.js, was `aiming` to **create real-time websites with push capability**, “inspired by applications like `Gmail`”. In Node.js, he gave developers a tool for working in the `non-blocking, event-driven I/O paradigm`.
